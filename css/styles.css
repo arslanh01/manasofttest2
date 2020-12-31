@@ -175,6 +175,8 @@ table img{
 	margin-right: 45px;
 }
 .overlay{
+	position: absolute;
+	left: 200px;
 	filter: blur(10px);
 	background-color: #CECECE;
 	opacity: 40%;

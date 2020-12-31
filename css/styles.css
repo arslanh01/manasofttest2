@@ -219,3 +219,7 @@ table img{
 	width: 89px;
 	height: 83px;
 }
+.col-md-10{
+	position: absolute;
+	left: 200px;
+}

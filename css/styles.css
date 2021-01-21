@@ -5,11 +5,9 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
-.sidenav{
-	width: 200px;
-	height: 1080px;
-}
+
 ul{
 	list-style: none;
 }
@@ -68,7 +66,6 @@ ul{
 	background-color: #FFFFFF;
 	padding: 12px 84px;
 	font-size: 32px;
-	box-shadow: 7px 0px 7px rgba(100,100,100,0.3);
 }
 .icon{
 	margin-left: 20px;
@@ -86,7 +83,6 @@ ul{
 }
 .header{
 	background-color: #ffffff;
-	width: 1720px;
 	height: 66px;
 	display: flex;
 	flex-direction: row;
@@ -154,7 +150,6 @@ body{
 	background-color: #ffffff;
 	margin-top: 30px;
 	margin-left: 30px;
-	width: 1656px;
 }
 table i{
 	margin-right: 15px;
@@ -218,8 +213,4 @@ table img{
 .module-img{
 	width: 89px;
 	height: 83px;
-}
-.col-md-10{
-	position: absolute;
-	left: 200px;
 }

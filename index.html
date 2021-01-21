@@ -1,273 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ManaTime</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-	<div class="row">
-		<div class="col-md-12">
-			Page 1
-		</div>
-	</div>
-	<div class="row">
-			<div class="col-md-2 col-sm-12">
-				<div class="sidenav">
-					<div class="bbtn">
-						<img src="./images/Burger button.svg" alt="burgerbtn">
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ManaTime</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/styles.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row no-gutters">
+				<div class="col-sm-auto">
+					<div class="sidenav">
+						<div class="bbtn">
+							<img src="./images/Burger button.svg" alt="burgerbtn">
+						</div>
+						<ul>
+							<li class="mi"><img class="icon" src="./images/Accueil.svg" alt="home">Accueil</li>
+							<li class="mi"><img class="icon" src="./images/Add.svg" alt="plus">Ajouter</li>
+							<div class="list2">
+								<li><img class="icon" src="./images/Mon espace.svg" alt="mon">Mon espace<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
+								<li><img class="icon" src="./images/Validation.svg" alt="val">Validation<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
+								<li><img class="icon" src="./images/Indicateurs.svg" alt="ind">Indicateurs<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
+								<div class="sublist">
+									<li class="sihead"><i class="icon fa fa-balance-scale" aria-hidden="true"></i>Soldes<i class="stripe fa fa-angle-up" aria-hidden="true"></i></li>
+									<li class="si">Gestion des soldes</li>
+									<li>Ajuster un solde</li>
+									<li>Compteurs</li>
+									<li>Historique</li>
+								</div>
+								<li><img class="icon" src="./images/Recherche.svg" alt="rech">Recherche<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
+								<img class="graphic" src="./images/Graphic.svg" alt="graph">
+							</div>
+						</ul>
 					</div>
-					<ul>
-						<li class="mi"><img class="icon" src="./images/Accueil.svg" alt="home">Accueil</li>
-						<li class="mi"><img class="icon" src="./images/Add.svg" alt="plus">Ajouter</li>
-						<div class="list2">
-							<li><img class="icon" src="./images/Mon espace.svg" alt="mon">Mon espace<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-							<li><img class="icon" src="./images/Validation.svg" alt="val">Validation<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-							<li><img class="icon" src="./images/Indicateurs.svg" alt="ind">Indicateurs<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-							<div class="sublist">
-							<li class="sihead"><i class="icon fa fa-balance-scale" aria-hidden="true"></i>Soldes<i class="stripe fa fa-angle-up" aria-hidden="true"></i></li>
-					<li class="si">Gestion des soldes</li>
-					<li>Ajuster un solde</li>
-					<li>Compteurs</li>
-					<li>Historique</li>
 				</div>
-				<li><img class="icon" src="./images/Recherche.svg" alt="rech">Recherche<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-				<img class="graphic" src="./images/Graphic.svg" alt="graph">
-			</div>
-		</ul>
-	</div>
-</div>
-<div class="col-md-10 col-sm-12">
-	<div class="header">
-		<div class="left">
-			<img src="./images/Absence_Icon.svg" alt="absence" style="font-size: 38px;">
-			<p class="absence">Absence</p>
-			<img class="stripe" src="./images/stripe2.svg" alt="stripe">
-			<i class="fa fa-balance-scale" aria-hidden="true" style="width:26px; height:23px; color:#858585;"></i>
-			<p>Sous module</p>
-			<img class="stripe" src="./images/stripe2.svg" alt="stripe">
-			<p class="sub">Sous sous module</p>
-		</div>
-		<div class="right">
-			<img class="icon" src="./images/Help.svg" alt="help">
-			<img class="icon" src="./images/Settings.svg" alt="setting">	
-			<div class="vline"></div>
-			<div class="profile">
-				<div class="name">Nom et Prenom</div>
-				<div>Enterprise</div>
-			</div>		
-			<img class="photo" src="./images/Photo.png" alt="photo">
-		</div>
-	</div>
-	<div class="mainbody">
-		<table class="table table-bordered table-striped table-hover table-responsive">
-			<thead>
-				<tr>
-					<th style="width: 450px;">Utilisateurs</th>
-					<th style="width: 450px;">Categorie</th>
-					<th>Periode</th>
-					<th>Solde actual</th>
-					<th>Solde pris</th>
-					<th>Solde futur</th>
-					<th> </th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
-</div>
-<div class="row">
-		<div class="col-md-12">
-			Page 2
-		</div>
-	</div>
-	<div class="row">
-			<div class="col-md-2 col-sm-12">
-				<div class="sidenav">
-					<div class="bbtn">
-						<img src="./images/Burger button.svg" alt="burgerbtn">
-					</div>
-					<ul>
-						<li class="mi"><img class="icon" src="./images/Accueil.svg" alt="home">Accueil</li>
-						<li class="mi"><img class="icon" src="./images/Add.svg" alt="plus">Ajouter</li>
-						<div class="list2">
-							<li><img class="icon" src="./images/Mon espace.svg" alt="mon">Mon espace<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-							<li><img class="icon" src="./images/Validation.svg" alt="val">Validation<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-							<li><img class="icon" src="./images/Indicateurs.svg" alt="ind">Indicateurs<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-							<div class="sublist">
-							<li class="sihead"><i class="icon fa fa-balance-scale" aria-hidden="true"></i>Soldes<i class="stripe fa fa-angle-up" aria-hidden="true"></i></li>
-					<li class="si">Gestion des soldes</li>
-					<li>Ajuster un solde</li>
-					<li>Compteurs</li>
-					<li>Historique</li>
+				<div class="col">
+					<div class="header">
+						<div class="left">
+							<img src="./images/Absence_Icon.svg" alt="absence" style="font-size: 38px;">
+							<p class="absence">Absence</p>
+							<img class="stripe" src="./images/stripe2.svg" alt="stripe">
+							<i class="fa fa-balance-scale" aria-hidden="true" style="width:26px; height:23px; color:#858585;"></i>
+							<p>Sous module</p>
+							<img class="stripe" src="./images/stripe2.svg" alt="stripe">
+							<p class="sub">Sous sous module</p>
+						</div>
+						<div class="right">
+							<img class="icon" src="./images/Help.svg" alt="help">
+							<img class="icon" src="./images/Settings.svg" alt="setting">	
+							<div class="vline"></div>
+							<div class="profile">
+								<div class="name">Nom et Prenom</div>
+								<div>Enterprise</div>
+							</div>		
+							<img class="photo" src="./images/Photo.png" alt="photo">
+						</div>
+						</div>
+						<div class="mainbody">
+						<table class="table table-bordered table-striped table-hover table-responsive">
+							<thead>
+								<tr>
+									<th style="width: 450px;">Utilisateurs</th>
+									<th style="width: 450px;">Categorie</th>
+									<th>Periode</th>
+									<th>Solde actual</th>
+									<th>Solde pris</th>
+									<th>Solde futur</th>
+									<th> </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Darlene Menson Dujon</td>
+									<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
+									<td>2020-2021</td>
+									<td>16</td>
+									<td>10</td>
+									<td>34</td>
+									<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
+								</tr>
+								<tr>
+									<td>Darlene Menson Dujon</td>
+									<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
+									<td>2020-2021</td>
+									<td>16</td>
+									<td>10</td>
+									<td>34</td>
+									<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
+								</tr>
+								<tr>
+									<td>Darlene Menson Dujon</td>
+									<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
+									<td>2020-2021</td>
+									<td>16</td>
+									<td>10</td>
+									<td>34</td>
+									<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
+								</tr>
+								<tr>
+									<td>Darlene Menson Dujon</td>
+									<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
+									<td>2020-2021</td>
+									<td>16</td>
+									<td>10</td>
+									<td>34</td>
+									<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
+								</tr>
+								<tr>
+									<td>Darlene Menson Dujon</td>
+									<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
+									<td>2020-2021</td>
+									<td>16</td>
+									<td>10</td>
+									<td>34</td>
+									<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
 				</div>
-				<li><img class="icon" src="./images/Recherche.svg" alt="rech">Recherche<img class="stripe" src="./images/Stripe.svg" alt="stripe"></li>
-				<img class="graphic" src="./images/Graphic.svg" alt="graph">
 			</div>
-		</ul>
-	</div>
-</div>
-<div class="burger-menu">
-	<div>
-		<div class="row">
-			<div class="col-md-12"><img class="logo" src="./images/Logo.svg" alt="logo"></div>
 		</div>
-		<div class="row module-row">
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_Planning.svg" alt="module"><div class="module-txt">Planning</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_Absences.svg" alt="module"><div class="module-txt">Absences</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_Heures.svg" alt="module"><div class="module-txt">Heures</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_NotedeFrais.svg" alt="module"><div class="module-txt">Note de frais</div></div>
-		</div>
-		<div class="row module-row">
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_Présence.svg" alt="module"><div class="module-txt">Présence</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_Compétences.svg" alt="module"><div class="module-txt">Compétences</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_SalaireetPAie.svg" alt="module"><div class="module-txt">Salaire et paie</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_Entretiens.svg" alt="module"><div class="module-txt">Entretiens</div></div>
-		</div>
-		<div class="row module-row">
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_Matériels.svg" alt="module"><div class="module-txt">Matériels</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Mdule_Documents.svg" alt="module"><div class="module-txt">Documents</div></div>
-			<div class="col-md-3 module"><img class="module-img" src="./images/Module_RH.svg" alt="module"><div class="module-txt">RH</div></div>
-		</div>
-	</div>
-</div>
-<div class="overlay">
-<div class="col-md-10">
-	<div class="header">
-		<div class="left">
-			<img src="./images/Absence_Icon.svg" alt="absence" style="font-size: 38px;">
-			<p class="absence">Absence</p>
-			<img class="stripe" src="./images/stripe2.svg" alt="stripe">
-			<i class="fa fa-balance-scale" aria-hidden="true" style="width:26px; height:23px; color:#858585;"></i>
-			<p>Sous module</p>
-			<img class="stripe" src="./images/stripe2.svg" alt="stripe">
-			<p class="sub">Sous sous module</p>
-		</div>
-		<div class="right">
-			<img class="icon" src="./images/Help.svg" alt="help">
-			<img class="icon" src="./images/Settings.svg" alt="setting">	
-			<div class="vline"></div>
-			<div class="profile">
-				<div class="name">Nom et Prenom</div>
-				<div>Enterprise</div>
-			</div>		
-			<img class="photo" src="./images/Photo.png" alt="photo">
-		</div>
-	</div>
-	<div class="mainbody">
-		<table class="table table-bordered table-striped table-hover table-responsive">
-			<thead>
-				<tr>
-					<th style="width: 450px;">Utilisateurs</th>
-					<th style="width: 450px;">Categorie</th>
-					<th>Periode</th>
-					<th>Solde actual</th>
-					<th>Solde pris</th>
-					<th>Solde futur</th>
-					<th> </th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-				<tr>
-					<td>Darlene Menson Dujon</td>
-					<td><i class="fa fa-circle" aria-hidden="true"></i>Conges payes</td>
-					<td>2020-2021</td>
-					<td>16</td>
-					<td>10</td>
-					<td>34</td>
-					<td><img src="./images/Ajuster.svg" alt="ajuster"><img src="./images/Transferer.svg" alt="ajuster"><img src="./images/Solder.svg" alt="ajuster"></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+	</body>
+	</html>
